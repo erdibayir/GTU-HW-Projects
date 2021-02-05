@@ -1,2 +1,2 @@
 # GTU-HW-Projects
- Homework and projects I did during the school year
+ Homeworks and projects I did at the university
