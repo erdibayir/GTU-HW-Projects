@@ -1,0 +1,279 @@
+\documentclass[a4 paper]{article}
+\usepackage[inner=2.0cm,outer=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage[ruled]{algorithm2e}
+\usepackage[rgb]{xcolor}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{amsgen,amsmath,amstext,amsbsy,amsopn,tikz,amssymb,tkz-linknodes}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=blue,  linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{rotating}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[6]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf CSE 211:~Discrete Mathematics \hfill {\small (#2)}} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Instructor: {\rm #3} \hfill Name: {\rm #5} \hfill Student Id: {\rm #6}} \hfill}
+       \hbox to 6.28in { {\it Assistant: #4  \hfill #6}}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#5 -- #1}{#5 -- #1}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[2]{~\\\fbox{\textbf{Problem #1}}\hfill (#2 points)\newline\newline}
+\newcommand{\subproblem}[1]{~\newline\textbf{(#1)}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\VS}{\textrm{VS}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
+
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\0}{\mathbf{0}}
+
+
+\begin{document}
+\homework{Homework \#2}{Due: 12/11/19}{Dr. Zafeirakis Zafeirakopoulos}{Gizem S\"ung\"u}{}{}
+\textbf{Course Policy}: Read all the instructions below carefully before you start working on the assignment, and before you make a submission.
+\begin{itemize}
+\item It is not a group homework. Do not share your answers to anyone in any circumstance. Any cheating means at least -100 for both sides. 
+\item Do not take any information from Internet.
+\item No late homework will be accepted. 
+\item For any questions about the homework, send an email to gizemsungu@gtu.edu.tr
+\item Submit your homework into Assignments/Homework1 directory of the CoCalc project CSE211-2019-2020.
+\end{itemize}
+
+\problem{1: Sets}{2+2+2+2+2=10}
+Which of the following sets are equal? Show your work step by step.\newline
+\subproblem{a} $\{$t : t is a root of $x^2$ – 6x + 8 = 0$\}$
+\newline
+
+\subproblem{b} $\{$y : y is a real number in the closed interval [2, 3]$\}$
+\newline
+\subproblem{c} $\{$4, 2, 5, 4$\}$
+\newline
+\subproblem{d} $\{$4, 5, 7, 2$\}$ - $\{$5, 7$\}$
+\newline
+
+\subproblem{e} $\{$q: q is either the number of sides of a rectangle or the number of digits in any integer between 11 and 99$\}$
+\solution
+\newline
+a) t= 4 or t= 2 S1= \{4,2\} \newline
+b) \{2.00 , 2.01 , 2.02 ...\} \newline
+d) \{4,2\} \newline
+e)Sides of rectangle=4  Number of Digits=2 \newline
+\{4,2\} \newline
+a , d and e  are equal \newline
+
+\newpage
+\problem{2: Cartesian Product of Sets}{15}
+Explain why (A $\times$ B) $\times$ (C $\times$ D) and A $\times$ (B $\times$ C) $\times$ D are not the same.
+\solution
+\newline
+A = \{A1\}, B = \{B1\} , C = \{C1\} , D = \{D1\} \newline \newline
+A $\times$ B = \{(A1 ,B1)\}   (C $\times$ D) = \{(C1 ,D1)\} \newline
+(A $\times$ B) $\times$ (C $\times$ D) = \{(A1 ,B1) , (C1 ,D1)\} \newline
+(B $\times$ C) = \{(B1 ,C1)\}   \newline    A $\times$ (B $\times$ C)= \{(A1 ,B1) ,(A1,C1)\} \newline
+A $\times$ (B $\times$ C) $\times$ D = \{(A1 ,D1) ,(B1,D1) , (C1,D1)\} \newline
+They are not same \newline
+\newline
+\problem{3: Cartesian Product of Sets in Algorithms }{25}
+Let A, B and C be sets which have different cardinalities. Let (p, q, r) be each triple of A $\times$ B $\times$ C where p $\in$ A, q $\in$ B and r $\in$ C. Design an algorithm which finds all the triples that are satisfying the criteria: p $\leq$ q and q $\geq$ r. Write the pseudo code of the algorithm in your solution.\newline
+\newline
+For example: Let the set A, B and C be as A = $\{$ 3, 5, 7 $\}$, B = $\{$ 3, 6 $\}$ and C = $\{$ 4, 6, 9 $\}$. Then the output should be : $\{$ (3, 6, 4), (3, 6, 6), (5, 6, 4), (5, 6, 6) $\}$. \newline
+\newline
+(Note: Assume that you have sets of A, B, C as an input argument.)\newline
+\solution
+
+\begin{algorithm}
+\SetAlgoLined
+\KwIn{The sets of A, B, C}
+\eIf{write a condition}{
+    Statements
+}{
+ Statements
+}
+ When you want to write a for loop, you can use: \newline
+\For{write a condition}{
+
+}
+ When you want to write a while loop, you can use: \newline
+\While{write a condition}{
+If you need to return, use \Return
+}
+ For any additional things you have to do while writing your pseudo code, Google "How to use algorithm2e in Latex?".
+\caption{Pseudo Code of Your Algorithm}
+\end{algorithm}
+
+
+\newpage
+\problem{4: Relations}{3+3+3+3+3+3+3=21}
+Determine whether the relation R on the set of all integers is reflexive, symmetric, antisymmetric, and/or transitive, where (x, y) $\in$ R if and only if
+\subproblem{a} x $\neq$ y.
+\solution
+\newline
+\textbf{Reflexive}\newline
+We assume that(x,y) $\rightarrow$ (a,a) for reflexive a $\neq$ a is false\newline
+It isn't reflexive\newline
+\textbf{Symetric}\newline
+x $\neq$ y if we assume that (x,y)  $\rightarrow$  (y,x) y $\neq$ x is true so it is symetric\newline
+\textbf{Antisymetric}\newline
+(x, y) $\in$ R and x  $\neq$ y ex:(2,3) and (3,2) are elements of this relation.It is symetric and It isn't antisymetric.\newline
+\textbf{Transitive} \newline
+for (a,b)  $\rightarrow$  a $\neq$ b for (b,c)  $\rightarrow$  b $\neq$ c for (a,c) $\rightarrow$  a $\neq$ c\newline
+There are elements that provide this condition, but not all. For example:
+(1,3) and (3,1) are in this relation but (1,1) isn't  in relation.This relation isn't transitive
+\newline
+\subproblem{b} xy $\geq$ 1.
+\solution
+\newline
+\textbf{Reflexive}\newline
+if we assume that (x,y) $\rightarrow$ (a,a)== a.a $\geq$ 1\newline
+(0,0) doesn't provide this condition.It isn't reflexive\newline
+\textbf{Symetric}\newline
+for (a,b)  $\rightarrow$  a.b $\geq$ 1 for (b,a)  $\rightarrow$  b.a $\geq$ 1.Both are  same so this relation is symetric.\newline
+\textbf{Antisymetric}\newline
+Ex:(2,3) and (3,2) are elements of this relation.It is symetric so This relatino isn't antisymetric.\newline
+\textbf{Transitive}\newline
+for (a,b)  $\rightarrow$  a.b $\geq$ 1 (b,c) $\rightarrow$  b.c $\geq$ 1 for (a,c) $\rightarrow$  a.c $\geq$ 1 is true.This relation is transitive\newline
+\newline
+\subproblem{c} x = y + 1 or x = y - 1.
+\solution
+\newline
+\textbf{Reflexive}\newline
+we assume that (x,y) $\rightarrow$  (a,a)\newline
+a=a+1 or a=a-1  F or F = F.This relation isn't reflexive\newline
+\textbf{Symetric}\newline
+Check (a,b) and (b,a)\newline
+(a,b)\newline
+a=b+1 or a= b-1 If organized b=a-1 or b=a+1\newline
+(b,a)\newline
+b=a+1 or b=a-1\newline
+(a,b) and (b,a) are same and true.This relation symetric\newline
+\textbf{Antisymetric}\newline
+Ex:(2,1) in this relation  and (1,2) are also in this relation\newline
+This is not Antisymetric as we have proved in Symetric.\newline
+\textbf{Transitive}\newline
+(2,1) and (1,2) are elements of relation but (2,2) isn't element of relation.This relation isn't transitive.
+\newline
+\subproblem{d} x is a multiple of y.
+\solution
+\newline
+\textbf{Reflexive}\newline
+x=k.y , k$\in$ Z\newline
+(a,a)  $\rightarrow$ a=k.a  k$\in$ Z   k=1.It is true.Relation is reflexive.\newline
+\textbf{Symetric}\newline
+For (a,b)  $\rightarrow$  a=k.b , k $\in$ Z    $(a\div b)$=k\newline
+For (b,a)  $\rightarrow$  b=m.a ,m $\in$ Z    $(a\div b)$=$(1\div m)$ \newline
+$(1\div m)$ and k must be $\in$ Z but 1/m not $\in$ Z.Relation is not symetric.\newline
+\newline
+\textbf{Antisymetric}\newline
+Relation doesn't have any symetric element except (1,1) and (1,1) also provide Antisymetric.Relation is Antisymetric. \newline
+\textbf{Transitive}\newline
+(a,b) $\rightarrow$ a=k.b (b,c) $\rightarrow$ b=m.c  (a,c) $\rightarrow$ a=n.c k,m,n $\in$ Z if a is multiple of b also a is multiple of c\newline Relation is transitive.\newline
+\subproblem{e} x and y are both negative or both nonnegative.
+\solution
+\newline
+x $<$ 0 and y $<$ 0 OR  x $>$ 0 and y $>$ 0\newline
+\textbf{Reflexive}\newline
+(a,a) $\rightarrow$ a $<$ 0 and a $<$ 0 OR  a $>$ 0 and a $>$ 0.It is true relation is reflexive\newline 
+\textbf{Symetric}\newline
+(a,b) $\rightarrow$ a $<$ 0 and b $<$ 0 OR  a $>$ 0 and b $>$ 0\newline
+(b,a) $\rightarrow$ b $<$ 0 and a $<$ 0 OR  b $>$ 0 and a $>$ 0\newline
+They are same so relation is symetric\newline
+\textbf{Antisymetric}\newline
+Relaiton have symetric elemets like:(1,2) and (2,1) both of them already in relation.So relation isn't antisymetric\newline
+\textbf{Transitive}\newline
+(a,b) $\rightarrow$ a $<$ 0 and b $<$ 0 OR  a $>$ 0 and b $>$ 0\newline
+(b,c) $\rightarrow$ b $<$ 0 and c $<$ 0 OR  b $>$ 0 and c $>$ 0\newline
+(a,c) $\rightarrow$ a $<$ 0 and c $<$ 0 OR  a $>$ 0 and c $>$ 0\newline
+If a $<$ 0 b must be $<$ 0 then c $<$ 0 So (a,c) is have to in relation.\newline
+So relation is transitive.\newline
+\newline
+\subproblem{f} x $\geq$ $y^2$.
+\solution
+\newline
+\textbf{Reflexive}\newline
+(a,a) $\rightarrow$ a $\geq$ $a^2$ It is not true for negative numbers.Relation isn't reflexive\newline
+\textbf{Symetric}\newline
+(a,b) $\rightarrow$ a $\geq$ $b^2$ \newline
+(b,a) $\rightarrow$ b $\geq$ $a^2$ This situation is false.Relation isn't symetric\newline 
+\textbf{Antisymetric}\newline
+Relation only have (1,1) (2,2) (3,3)... symetric elements and this does not disturb the antisymmetric condition.Relation is antisymetric.\newline
+\newline
+\textbf{Transitive}\newline
+(a,b) $\rightarrow$ a $\geq$ $b^2$ \newline
+(b,c) $\rightarrow$ b $\geq$ $c^2$ \newline
+(a,c) $\rightarrow$ a $\geq$ $c^2$ \newline
+a $>$ $b^2$ also a $c^2$.(a,c) in relation elements,Relation is transitive.
+\subproblem{g} x = $y^2$.
+\solution
+\newline
+\textbf{Reflexive}\newline
+(x,y) $\rightarrow$ (a,a) a = $a^2$. \newline
+It only provide  (0,0) and (1,1) other elements like (2,2) isn't in relation .Relation isn't reflexive\newline
+\textbf{Symetric}\newline
+(a,b) $\rightarrow$  a = $b^2$ \newline
+(b,a) $\rightarrow$  b = $a^2$ \newline
+It only true for (1,1) other elements like (4,2) is in relation but (2,4) isn't in relation.Relation isn't symetric.
+\textbf{Antisymetric}\newline
+Relation antisymetric.Because relation have only (1,1) symetric elemets and this does not disturb the antisymmetric condition.\newline
+\newline
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+\newline
+
+
+\problem{5: Functions}{15}
+If f and f $\circ$ g are one-to-one, does it follow that g is one-to-one? Justify your answer.
+\solution
+\newline
+\newline
+We suppose x1 =x2 \newline
+f o g(x1) = f  o g (x2) \newline
+f(g(x1)) = f(g(x2)) then g(x1) =g(x2)\newline
+g is one-to-one\newline
+\newline
+\problem{6: Inverse of Functions}{7+7=14}
+Let f be the function from $\mathbb{R}$ to $\mathbb{R}$ defined by f(x) = $x^2$. Find
+\subproblem{a} $f^{-1}$ ($\{$ x $\vert$ 0 $<$ x $<$ 1 $\}$)
+\solution
+\newline
+\newline
+y=$x^2$ $\rightarrow$ x=$\sqrt{y}$  $\rightarrow$ $f^{-1}$(x) = $\sqrt{x}$ 
+\newline
+\subproblem{b}$f^{-1}$ ($\{$ x $\vert$ x $>$ 4 $\}$) 
+\solution
+\newline
+for x: x $>$ 4 also
+$f^{-1}$(x) = $\sqrt{x}$ \newline
+\end{document}

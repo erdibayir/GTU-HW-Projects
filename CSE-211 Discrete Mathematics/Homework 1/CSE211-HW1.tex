@@ -1,0 +1,246 @@
+\documentclass[a4 paper]{article}
+\usepackage[inner=2.0cm,outer=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage[rgb]{xcolor}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{amsgen,amsmath,amstext,amsbsy,amsopn,tikz,amssymb,tkz-linknodes}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=blue,  linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{rotating}
+\usepackage{booktabs}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[6]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf CSE 211:~Discrete Mathematics \hfill {\small (#2)}} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Instructor: {\rm #3} \hfill Name:  {\rm #5} \hfill Student Id: {\rm #6}} \hfill}
+       \hbox to 6.28in { {\it Assistant: #4  \hfill #6}}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#5 -- #1}{#5 -- #1}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[2]{~\\\fbox{\textbf{Problem #1}}\hfill (#2 points)\newline\newline}
+\newcommand{\subproblem}[1]{~\newline\textbf{(#1)}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\VS}{\textrm{VS}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
+
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\0}{\mathbf{0}}
+
+
+\begin{document}
+\homework{Homework \#1}{Due: 27/10/19}{Dr. Zafeirakis Zafeirakopoulos}{Gizem S\"ung\"u}{}{}
+\textbf{Course Policy}: Read all the instructions below carefully before you start working on the assignment, and before you make a submission.
+\begin{itemize}
+\item It is not a group homework. Do not share your answers to anyone in any circumstance. Any cheating means at least -100 for both sides. 
+\item Do not take any information from Internet.
+\item No late homework will be accepted. 
+\item For any questions about the homework, send an email to gizemsungu@gtu.edu.tr
+\item Submit your homework into Assignments/Homework1 directory of the CoCalc project CSE211-2019-2020.
+\end{itemize}
+
+\problem{1: Conditional Statements}{5+5+5=15}
+State the converse, contrapositive, and inverse of each of these conditional statements.
+
+
+\subproblem{a} If it snows tonight, then I will stay at home.
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+\newline
+\textbf{Converse: If I stay at home , it will snow tonight.}
+\newline
+\newline
+\textbf{Contrapositive: If I don’t stay at home , it won’t snow tonight.}
+\newline
+\newline
+\textbf{Inverse:If it doesn’t snow tonight, I won’t stay at home. }
+\newline
+
+\subproblem{b} I go to the beach whenever it is a sunny summer day.
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+\newline
+\textbf{Converse:It is a sunny summer day whenever I go to the beach.}
+\newline
+\newline
+\textbf{Contrapositive:Whenever it is not a sunny summer day. I don’t go to the beach. }
+\newline
+\newline
+\textbf{Inverse:I don’t go to the beach whenever it is not a sunny summer day. }
+\newline
+
+
+
+\subproblem{c} When I stay up late, it is necessary that I sleep until
+noon.
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+\newline
+\textbf{Converse: When It is necessary that I sleep until noon ,I stay up late.}
+\newline
+\newline
+\textbf{Contrapositive:When It is not necessary that I sleep until noon,I don’t stay up late. }
+\newline
+\newline
+\textbf{Inverse:When I don’t stay up late , it is not necessary that I sleep until noon. }
+\newline
+\newline
+
+\newpage
+\problem{2: Truth Tables For Logic Operators}{5+5+5=15}
+Construct a truth table for each of the following compound propositions.
+\subproblem{a} (p $\oplus$ $\neg$ q)
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+\begin{displaymath}[]
+\begin{array}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{p} & q & $\neg$ q & (p  $\oplus$ $\neg$ q) \\ \hline
+T & T & F & T \\ \hline
+T & F & T & F \\ \hline
+F & T & F & F \\ \hline
+F & F & T & T \\ \hline
+\end{array}
+\end{displaymath}
+\subproblem{b} (p $\iff$ q) $\oplus$ ( $\neg$ p $\iff$ $\neg$ r)
+\solution
+\newline
+\begin{displaymath}[]
+\begin{array}{|l|l|l|l|l|l|l|l|}\hline
+\multicolumn{1}{|c|} p & q & r & ($\neg$ p) & ($\neg$ r) & (p $\iff$ q) & ($\neg$ p $\iff$ $\neg$ r) & (p $\iff$ q) $\oplus$ ( $\neg$ p $\iff$ $\neg$ r) \\ \hline
+T & T & T & F & F & T & T & F \\ \hline
+T & F & T & F & F & F & T & T \\ \hline
+T & T & F & F & T & T & F & T \\ \hline
+T & F & F & F & T & F & F & F \\ \hline
+F & T & T & T & F & F & F & F  \\ \hline
+F & T & F & T & T & F & T & T   \\ \hline
+F & F & T & T & F & T & F & T    \\ \hline
+F & F & F & T & T & T & T & F   \\ \hline
+\end{array}
+\end{displaymath}
+\newpage
+\subproblem{c} (p $\oplus$ q) $\Rightarrow$ (p $\oplus$ $\neg$ q)
+\solution
+\newline
+\begin{displaymath}[]
+\begin{array}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{p} & q & $\neg$ q & (p $\oplus$ q) & (p $\oplus$ $\neg$ q) & (p $\oplus$ q) $\Rightarrow$ (p $\oplus$ $\neg$ q) \\ \hline
+T & T & F & F & T & T\\ \hline
+T & F & T & T & F & F \\ \hline
+F & T & F & T & F & F \\ \hline
+F & F & T & F & T & T  \\ \hline
+\end{array}
+\end{displaymath}
+\newpage
+\problem{3: Logic in Algorithms }{10+10+10=30}
+If x = 1 before the statement is reached, what is the value of x after each of these statements is encountered in a computer program? Why? Show your work step by step.
+\subproblem{a}  \textbf{for} i $\Leftarrow$ 1 \textbf{to} 10 \textbf{do}\\ 
+\par \hspace{5mm} \textbf{if} x + 2 = 3 \textbf{then} x := x + 1 \newline
+\par \hspace{0.5mm} \textbf{end}
+\newline
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+1)i=1, X=1 is true because of x+2 = 3; then x=2\newline
+2)i=2,X=2 is false because of x+2 = 4 ; then x=2\newline
+3)i=3,X=2 is false because of x+2 = 4 ; then x=2\newline
+.\newline
+.\newline
+.\newline
+9)i=9, x=2 is false because of x+2= 4 ; then x=2\newline
+10)i=10,x=2 is false because of x+2=4 ; then x=2\newline
+X=2  Because, after step 2, X does not provide the condition given in any step.\newline
+\subproblem{b}  \textbf{for} i $\Leftarrow$ 1 \textbf{to} 5 \textbf{do}\\ 
+\par \hspace{5mm} \textbf{if} (x + 1 = 2) XOR (x + 2 = 3) \textbf{then} x := x + 1
+\newline
+\par \hspace{0.5mm} \textbf{end}
+\newline
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+1)i=1 , x=1 , (x+1 = 2) XOR (x+2=3) : 1 XOR 1 =FALSE x=1 still\newline
+2)i=2 , x=1 , (x+1 = 2) XOR (x+2=3) : 1 XOR 1 = FALSE x=1 still\newline
+3)i=3 , x=1 , (x+1 = 2) XOR (x+2=3) : 1 XOR 1 =FALSE x=1 still\newline
+4)i=4 , x=1 , (x+1 = 2) XOR (x+2=3) : 1 XOR 1 =FALSE x=1 still\newline
+5)i=5 , x=1 , (x+1 = 2) XOR (x+2=3) : 1 XOR 1 =FALSE x=1 still\newline
+X always be 1 because in first step x dont provide the condition in any step
+\newline
+\subproblem{c}  \textbf{for} i $\Leftarrow$ 1 \textbf{to} 4 \textbf{do} \newline
+\par \hspace{5mm} \textbf{if} (2x + 3 = 5) AND (3x + 4 = 7) \textbf{then} x := x + 1
+\newline
+\par \hspace{0.5mm} \textbf{end}
+\newline 
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+1)i=1, x=1 (2x+3 = 5) AND (3x + 4 = 7) : 1 AND 1 =TRUE , X:=X+1,X=2\newline
+2)i=2, x=2 (2x+3 = 5) AND (3x + 4 = 7) : 0 AND 0 =FALSE , X=2 still\newline
+3)i=3, x=2 (2x+3 = 5) AND (3x + 4 = 7) : 0 AND 0 =FALSE , X=2 still\newline
+4)i=4, x=2 (2x+3 = 5) AND (3x + 4 = 7) : 0 AND 0 =FALSE , X=2 still\newline
+\newpage
+\problem{4: Proof by contradiction }{20}
+Show that at least three of any 25 days chosen must fall in the same month of the year using a proof by contradiction. Explain your work step by step.
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+1)p:At least three of any 25 days chosen must fall in same mounth of the year\newline
+2)$\neg$p:At least three of any 25 days chosen don't have to fall in same mounth of the year\newline
+3)If we detirmine $\neg$p is false we prove that p is true\newline
+4)1 year = 12 mounth\newline
+According to $\neg$p every mounths of the year must has 2 of any 25 days chosen
+but if we choose 2 day 12*2 =24 , In this situation, we need to choose one more so $\neg$p is false\newline
+5)p is true
+\newline
+\problem{5: Proof by contraposition }{20}
+Show that if $n^3 + 5$ is odd, then n is even using a proof by contraposition. Explain your work step by step.\\
+\textit{Note: Assume that n is an integer.}
+\solution
+%%%%%%REMOVE \newline commands while writing your answer%%%%%
+\newline
+1)If we prove that ( $\neg$ q $\Rightarrow$ $\neg$ p)  is true we also prove that p $\Rightarrow$ q true\newline\newline
+2) $\neg$ q $\Rightarrow$ $\neg$ p :If n is odd then n3+5 is even\newline
+3)Assume that n is odd true\newline
+n=2k+1  k\varepsilon Z\newline
+4)n^3+5=(2k+1)^3 +5=8k^3 + 12k^2 + 6k +6 =2(4k^3 + 6k^2+3k+3)\newline
+p=4k^3 + 6k^2+3k+3 ,k   \varepsilon  Z, p\varepsilon Z \newline
+5)n^3+5=2p\newline
+6)($\neg$ q $\Rightarrow$ $\neg$ p) true\newline
+also p $\Rightarrow$ q true
+\end{document} 
