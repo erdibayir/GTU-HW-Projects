@@ -1,0 +1,364 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Dersler\CSE331-Computer_Organization\HW4\HW4\simulation\modelsim
+vadder_32_bit
+I2HIQf96fe:256SaeMX4]M0
+VZaclXGMXgTI9nmJ>g3YL81
+Z1 dD:\Dersler\CSE331-Computer_Organization\HW4\HW4\simulation\modelsim
+w1610707443
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/adder_32_bit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/adder_32_bit.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 -O0
+!i10b 1
+!s100 QQ]G@Z8Z72fZakgEjICR;3
+!s85 0
+!s108 1612342835.781000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/adder_32_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/adder_32_bit.v|
+!s101 -O0
+valu_32_bit
+I`9Old9<KIXR`DF=bloI;33
+VEL5?jgL6]3AFaUzTJ]>m41
+R1
+w1610707423
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_32_bit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_32_bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 nNG:<WYPQfc:Q3fmSVT^]0
+!s85 0
+!s108 1612342837.495000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_32_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_32_bit.v|
+!s101 -O0
+valu_control_unit
+Ido2Tni>C:c=nIfae;m=ln0
+ViD@Z9RVkhXeQ4oH`d69o33
+R1
+w1610538214
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_control_unit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_control_unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 O5:lb@99XOg4E@8WDBM<c2
+!s85 0
+!s108 1612342840.284000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_control_unit.v|
+!s101 -O0
+vand_32_bit
+I7Z6@cXeU<^g<ed6c]fVCd1
+VbR2PPD6[1oOW==<O<zjXX2
+R1
+w1609949586
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/and_32_bit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/and_32_bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 I@iS123QUC^Q9S5mf=c300
+!s85 0
+!s108 1612342836.188000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/and_32_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/and_32_bit.v|
+!s101 -O0
+vcontrol_unit
+IRDG;LbnX0PIZimfESWd:j0
+VEXeR;IB00>7hCMW>HNiZn2
+R1
+w1610564339
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/control_unit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/control_unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ]n]4[08?]NhnX=ziDKInP0
+!s85 0
+!s108 1612342840.471000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/control_unit.v|
+!s101 -O0
+vdata_memory_block
+I@Vfg0<0bl4EZg0KPJgQSa3
+V2OzQ^3bD]45CAnbQm<jbQ1
+R1
+w1611064023
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/data_memory_block.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/data_memory_block.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 JAN=Wf4@ARWfJC7HEYGo62
+!s85 0
+!s108 1612342839.867000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/data_memory_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/data_memory_block.v|
+!s101 -O0
+vextend_16_to_32
+IJG3V^IYWWeF:h?i@K6:820
+VEc6O_c?FNL<=C8z11A::d0
+R1
+w1610099341
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/extend_16_to_32.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/extend_16_to_32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 GWP`?>a^>ezjcA?=hhkZ73
+!s85 0
+!s108 1612342836.706000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/extend_16_to_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/extend_16_to_32.v|
+!s101 -O0
+vfull_adder
+ICUCLzLz5]1mgMzA]RYa;o0
+VIDUmQozS1lOEf8?::WPSO3
+R1
+w1609923410
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/full_adder.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/full_adder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 K6d;a[z3SO<>0Rc1ka0YW1
+!s85 0
+!s108 1612342835.562000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/full_adder.v|
+!s101 -O0
+vmips32
+I5J>bJCNEEU_fO_i2ePQD:3
+VZf:CZU9T8N<Q1V6ni1K0k2
+R1
+w1611147522
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Nf]]k2>QFlkY1G=UT`dTX2
+!s85 0
+!s108 1612342840.702000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32.v|
+!s101 -O0
+vmips32_tb
+!i10b 1
+!s100 bDkR?9DhZN[UMacgTZIgB0
+I>YLgJ^Haoz5:[MTY=bNkm2
+V=olKZzXi>XH[EZi>G]d8R1
+R1
+w1611150060
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32_tb.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1612342850.097000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32_tb.v|
+!s90 -reportprogress|300|-work|work|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32_tb.v|
+!s101 -O0
+o-work work -O0
+vmux_1_bit_2_1
+IeLT^m=7=dYF;Y;nglU5AW3
+VTKBJzVF=fiWU<]RDc[E;70
+R1
+w1610142882
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_1_bit_2_1.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_1_bit_2_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 XY>Pbo97fK6ZdKlKO;=o61
+!s85 0
+!s108 1612342837.299000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_1_bit_2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_1_bit_2_1.v|
+!s101 -O0
+vmux_32_bit_2_1
+I0D@06F_LJQ>TUb[Z]ReBU2
+V:GV:;S8i4PFK4<202UPN91
+R1
+w1610189342
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_32_bit_2_1.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_32_bit_2_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 XkEe:I18OW^HM[kY4hFIA2
+!s85 0
+!s108 1612342837.092000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_32_bit_2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_32_bit_2_1.v|
+!s101 -O0
+vmux_5_bit_2_1
+I]bdB<GN1ij=WCA2YQ>>TA1
+V`oFhM;N]1XcBRVAfK:iXi2
+R1
+w1610702978
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_5_bit_2_1.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_5_bit_2_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 N5^LEm7e_oHmbdkzE@Ol41
+!s85 0
+!s108 1612342840.894000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_5_bit_2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_5_bit_2_1.v|
+!s101 -O0
+vor_32_bit
+I9?nl?^3Iz1XiO=bf55n7R0
+Vg9Z7JN?E9<7nPl^^N9GmV0
+R1
+w1609949900
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/or_32_bit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/or_32_bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 KIGL0m9mjLl?_6E8WKn713
+!s85 0
+!s108 1612342836.390000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/or_32_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/or_32_bit.v|
+!s101 -O0
+vprogram_counter_block
+I[GbF8B5ja<dBdi1A>3SS;1
+Vj8]1312RCK85OeSm2z3lR2
+R1
+w1611148480
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/program_counter_block.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/program_counter_block.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 F[nH>Zho;cY=VjL7oh>Gj0
+!s85 0
+!s108 1612342839.658000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/program_counter_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/program_counter_block.v|
+!s101 -O0
+vregister_block
+IezfF0zPnM:MJaU31CWS@E3
+V2MU?nZ^QDN=>_JBmCWCgk1
+R1
+w1611146750
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/register_block.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/register_block.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 M3IKSmYBjF6UzUnaET<<m2
+!s85 0
+!s108 1612342836.899000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/register_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/register_block.v|
+!s101 -O0
+vsub_32_bit
+Ih0`;D_nPi7jj<Dgz6@;NK2
+VSjKz7_80TMV;X4R7V05[13
+R1
+w1610707459
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/sub_32_bit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/sub_32_bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ?^K3>I9eRoz9b[1i58lf32
+!s85 0
+!s108 1612342840.083000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/sub_32_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/sub_32_bit.v|
+!s101 -O0
+vxor_32_bit
+If]JNiQgLKKR7zfhnTN`fT0
+VSldfmC^knkJj<R?zW@jmK1
+R1
+w1609945404
+8D:/Dersler/CSE331-Computer_Organization/HW4/HW4/xor_32_bit.v
+FD:/Dersler/CSE331-Computer_Organization/HW4/HW4/xor_32_bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 `C69c1Y>_V<VBHnF@oE^n3
+!s85 0
+!s108 1612342835.978000
+!s107 D:/Dersler/CSE331-Computer_Organization/HW4/HW4/xor_32_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4|D:/Dersler/CSE331-Computer_Organization/HW4/HW4/xor_32_bit.v|
+!s101 -O0

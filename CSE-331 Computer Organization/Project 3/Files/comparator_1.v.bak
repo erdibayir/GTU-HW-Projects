@@ -1,0 +1,4 @@
+module comparator_1(i1,i2,out);
+input i1,i2;
+output out;
+endmodule

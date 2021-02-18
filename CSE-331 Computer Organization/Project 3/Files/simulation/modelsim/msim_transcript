@@ -1,0 +1,198 @@
+# Reading D:/quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# do hw4_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/full_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/adder_32_bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_32_bit
+# 
+# Top level modules:
+# 	adder_32_bit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/xor_32_bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module xor_32_bit
+# 
+# Top level modules:
+# 	xor_32_bit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/and_32_bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module and_32_bit
+# 
+# Top level modules:
+# 	and_32_bit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/or_32_bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module or_32_bit
+# 
+# Top level modules:
+# 	or_32_bit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/extend_16_to_32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module extend_16_to_32
+# 
+# Top level modules:
+# 	extend_16_to_32
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/register_block.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_block
+# 
+# Top level modules:
+# 	register_block
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_32_bit_2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_32_bit_2_1
+# 
+# Top level modules:
+# 	mux_32_bit_2_1
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_1_bit_2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_1_bit_2_1
+# 
+# Top level modules:
+# 	mux_1_bit_2_1
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_32_bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_32_bit
+# 
+# Top level modules:
+# 	alu_32_bit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/program_counter_block.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module program_counter_block
+# 
+# Top level modules:
+# 	program_counter_block
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/data_memory_block.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module data_memory_block
+# 
+# Top level modules:
+# 	data_memory_block
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/sub_32_bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_32_bit
+# 
+# Top level modules:
+# 	sub_32_bit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_control_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_control_unit
+# 
+# Top level modules:
+# 	alu_control_unit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/control_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32
+# 
+# Top level modules:
+# 	mips32
+# vlog -vlog01compat -work work +incdir+D:/Dersler/CSE331-Computer_Organization/HW4/HW4 {D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_5_bit_2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_5_bit_2_1
+# 
+# Top level modules:
+# 	mux_5_bit_2_1
+# 
+vlog -reportprogress 300 -work work D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32_tb
+# 
+# Top level modules:
+# 	mips32_tb
+vlog -reportprogress 300 -work work D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips32_tb
+# 
+# Top level modules:
+# 	mips32_tb
+vsim work.mips32_tb
+# vsim work.mips32_tb 
+# Loading work.mips32_tb
+# Loading work.mips32
+# Loading work.program_counter_block
+# Loading work.control_unit
+# Loading work.extend_16_to_32
+# Loading work.mux_5_bit_2_1
+# Loading work.mux_1_bit_2_1
+# Loading work.register_block
+# Loading work.mux_32_bit_2_1
+# Loading work.alu_control_unit
+# Loading work.alu_32_bit
+# Loading work.and_32_bit
+# Loading work.or_32_bit
+# Loading work.adder_32_bit
+# Loading work.full_adder
+# Loading work.xor_32_bit
+# Loading work.sub_32_bit
+# Loading work.data_memory_block
+run
+# Opcode:23,Rs:00 Rt:01 Rd:00 immediate:0000 regWrite:1 Alu Control Unit Out:010 RegDst:0 Branch:0 MemWrite:0 ALUSrc:1 MemToReg:1 AluOP:00
+# Alu Result:00000000000000000000000000000000 Read_data_2:00000000000000000000000000000111
+# Read_data_1:00000000000000000000000000000000
+# data[0]:00000000000000000000000000000011
+# data[1]:00000000000000000000000000000100
+# data[2]:00000000000000000000000000000000
+#  Reg[1]=00000000000000000000000000000111
+#  Data Read Data:00000000000000000000000000000011
+#  Final Data:00000000000000000000000000000011
+#  
+# Opcode:2b,Rs:02 Rt:07 Rd:00 immediate:0002 regWrite:0 Alu Control Unit Out:010 RegDst:0 Branch:0 MemWrite:1 ALUSrc:1 MemToReg:0 AluOP:00
+# Alu Result:00000000000000000000000000000111 Read_data_2:00000000000000000000000000001100
+# Read_data_1:00000000000000000000000000000101
+# data[0]:00000000000000000000000000000011
+# data[1]:00000000000000000000000000000100
+# data[2]:00000000000000000000000000000000
+#  Reg[1]=00000000000000000000000000000011
+#  Data Read Data:00000000000000000000000000000000
+#  Final Data:00000000000000000000000000000111
+#  
+# Opcode:2b,Rs:02 Rt:07 Rd:00 immediate:0002 regWrite:0 Alu Control Unit Out:010 RegDst:0 Branch:0 MemWrite:1 ALUSrc:1 MemToReg:0 AluOP:00
+# Alu Result:00000000000000000000000000000111 Read_data_2:00000000000000000000000000001100
+# Read_data_1:00000000000000000000000000000101
+# data[0]:00000000000000000000000000000011
+# data[1]:00000000000000000000000000000100
+# data[2]:00000000000000000000000000000000
+#  Reg[1]=00000000000000000000000000000011
+#  Data Read Data:00000000000000000000000000001100
+#  Final Data:00000000000000000000000000000111
+#  
+# Opcode:00,Rs:08 Rt:09 Rd:03 immediate:1820 regWrite:1 Alu Control Unit Out:010 RegDst:1 Branch:0 MemWrite:0 ALUSrc:0 MemToReg:0 AluOP:10
+# Alu Result:00000000000000000000000000100011 Read_data_2:00000000000000000000000000100000
+# Read_data_1:00000000000000000000000000000011
+# data[0]:00000000000000000000000000000011
+# data[1]:00000000000000000000000000000100
+# data[2]:00000000000000000000000000000000
+#  Reg[1]=00000000000000000000000000000011
+#  Data Read Data:00000000000000000000000000000000
+#  Final Data:00000000000000000000000000100011
+#  
+# Opcode:00,Rs:09 Rt:08 Rd:0c immediate:6024 regWrite:1 Alu Control Unit Out:000 RegDst:1 Branch:0 MemWrite:0 ALUSrc:0 MemToReg:0 AluOP:10
+# Alu Result:00000000000000000000000000000000 Read_data_2:00000000000000000000000000000011
+# Read_data_1:00000000000000000000000000100000
+# data[0]:00000000000000000000000000000011
+# data[1]:00000000000000000000000000000100
+# data[2]:00000000000000000000000000000000
+#  Reg[1]=00000000000000000000000000000011
+#  Data Read Data:00000000000000000000000000000011
+#  Final Data:00000000000000000000000000000000
+#  

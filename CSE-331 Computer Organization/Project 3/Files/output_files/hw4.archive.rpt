@@ -1,0 +1,115 @@
+Archive Project report for hw4
+Wed Jan 20 18:04:24 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Wed Jan 20 18:04:24 2021 ;
+; Revision Name          ; hw4                                   ;
+; Top-level Entity Name  ; mips32                                ;
+; Family                 ; Cyclone IV GX                         ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'D:/Dersler/CSE331-Computer_Organization/HW4/HW4/171044063.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'hw4.archive.rpt'
+Info (23030): Evaluation of Tcl script d:/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4471 megabytes
+    Info: Processing ended: Wed Jan 20 18:04:25 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------+
+; Files Archived                                   ;
++--------------------------------------------------+
+; File Name                                        ;
++--------------------------------------------------+
+; adder_32_bit.v                                   ;
+; adder_tb.v                                       ;
+; alu_32_bit.v                                     ;
+; alu_32_tb.v                                      ;
+; alu_control_unit.v                               ;
+; alu_cu_tb.v                                      ;
+; and_32_bit.v                                     ;
+; and_tb.v                                         ;
+; comparator_1.v                                   ;
+; comparator_1_bit.v                               ;
+; control_unit.v                                   ;
+; cu_tb.v                                          ;
+; d:/quartus/quartus/bin64/assignment_defaults.qdf ;
+; data_memory_block.v                              ;
+; db/hw4.db_info                                   ;
+; extend_16_to_32.v                                ;
+; extend_tb.v                                      ;
+; full_adder.v                                     ;
+; full_adder_testbench.v                           ;
+; hw4.qpf                                          ;
+; hw4.qsf                                          ;
+; incremental_db/compiled_partitions/hw4.db_info   ;
+; instructions.txt                                 ;
+; memory_data.txt                                  ;
+; mips32.v                                         ;
+; mips32_tb.v                                      ;
+; mux_1_bit_2_1.v                                  ;
+; mux_3_bit_2_1.v                                  ;
+; mux_5_bit_2_1.v                                  ;
+; mux_32_bit_2_1.v                                 ;
+; mux_32_tb.v                                      ;
+; new_memory_data.txt                              ;
+; new_Registers.txt                                ;
+; or_32_bit.v                                      ;
+; or_tb.v                                          ;
+; pc_tb.v                                          ;
+; program_counter_block.v                          ;
+; register_block.v                                 ;
+; registers.txt                                    ;
+; sub_32_bit.v                                     ;
+; sub_tb.v                                         ;
+; xor_32_bit.v                                     ;
+; xor_tb.v                                         ;
++--------------------------------------------------+
+
+

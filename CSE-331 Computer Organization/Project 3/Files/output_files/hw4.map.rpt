@@ -1,0 +1,539 @@
+Analysis & Synthesis report for hw4
+Wed Feb 03 12:00:22 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "alu_32_bit:alu_32|mux_32_bit_2_1:mux6"
+ 10. Port Connectivity Checks: "alu_32_bit:alu_32|mux_32_bit_2_1:mux1"
+ 11. Port Connectivity Checks: "alu_32_bit:alu_32|sub_32_bit:sub1|full_adder:f32"
+ 12. Port Connectivity Checks: "alu_32_bit:alu_32|sub_32_bit:sub1|full_adder:f1"
+ 13. Port Connectivity Checks: "alu_32_bit:alu_32|adder_32_bit:add1|full_adder:f32"
+ 14. Port Connectivity Checks: "alu_32_bit:alu_32|adder_32_bit:add1|full_adder:f1"
+ 15. Port Connectivity Checks: "alu_32_bit:alu_32"
+ 16. Port Connectivity Checks: "register_block:register"
+ 17. Port Connectivity Checks: "extend_16_to_32:ext"
+ 18. Port Connectivity Checks: "control_unit:cu"
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Feb 03 12:00:22 2021      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; hw4                                        ;
+; Top-level Entity Name              ; mips32                                     ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 1                                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; mips32             ; hw4                ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/full_adder.v            ;         ;
+; adder_32_bit.v                   ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/adder_32_bit.v          ;         ;
+; xor_32_bit.v                     ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/xor_32_bit.v            ;         ;
+; and_32_bit.v                     ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/and_32_bit.v            ;         ;
+; or_32_bit.v                      ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/or_32_bit.v             ;         ;
+; extend_16_to_32.v                ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/extend_16_to_32.v       ;         ;
+; register_block.v                 ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/register_block.v        ;         ;
+; mux_32_bit_2_1.v                 ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_32_bit_2_1.v        ;         ;
+; mux_1_bit_2_1.v                  ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_1_bit_2_1.v         ;         ;
+; alu_32_bit.v                     ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_32_bit.v            ;         ;
+; program_counter_block.v          ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/program_counter_block.v ;         ;
+; data_memory_block.v              ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/data_memory_block.v     ;         ;
+; sub_32_bit.v                     ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/sub_32_bit.v            ;         ;
+; alu_control_unit.v               ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/alu_control_unit.v      ;         ;
+; control_unit.v                   ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/control_unit.v          ;         ;
+; mips32.v                         ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mips32.v                ;         ;
+; mux_5_bit_2_1.v                  ; yes             ; User Verilog HDL File  ; D:/Dersler/CSE331-Computer_Organization/HW4/HW4/mux_5_bit_2_1.v         ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 1                ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clock            ;
+; Maximum fan-out          ; 1                ;
+; Total fan-out            ; 1                ;
+; Average fan-out          ; 0.50             ;
++--------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |mips32                    ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 1    ; 0            ; |mips32             ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32|mux_32_bit_2_1:mux6" ;
++----------+-------+----------+-------------------------------------+
+; Port     ; Type  ; Severity ; Details                             ;
++----------+-------+----------+-------------------------------------+
+; i2       ; Input ; Info     ; Stuck at GND                        ;
+; select_b ; Input ; Info     ; Stuck at GND                        ;
++----------+-------+----------+-------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32|mux_32_bit_2_1:mux1" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; i1   ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32|sub_32_bit:sub1|full_adder:f32"                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32|sub_32_bit:sub1|full_adder:f1" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32|adder_32_bit:add1|full_adder:f32"                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32|adder_32_bit:add1|full_adder:f1" ;
++------+-------+----------+-----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                             ;
++------+-------+----------+-----------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                        ;
++------+-------+----------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_32_bit:alu_32"                                                                      ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; zero_bit ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "register_block:register" ;
++-----------------+-------+----------+----------------+
+; Port            ; Type  ; Severity ; Details        ;
++-----------------+-------+----------+----------------+
+; write_register2 ; Input ; Info     ; Stuck at GND   ;
++-----------------+-------+----------+----------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "extend_16_to_32:ext" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; sign ; Input ; Info     ; Stuck at GND          ;
++------+-------+----------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "control_unit:cu"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; branch  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemRead ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Feb 03 12:00:19 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hw4 -c hw4
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder_testbench.v
+    Info (12023): Found entity 1: full_adder_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file adder_32_bit.v
+    Info (12023): Found entity 1: adder_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
+    Info (12023): Found entity 1: adder_tb
+Info (12021): Found 1 design units, including 1 entities, in source file xor_32_bit.v
+    Info (12023): Found entity 1: xor_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file xor_tb.v
+    Info (12023): Found entity 1: xor_tb
+Info (12021): Found 1 design units, including 1 entities, in source file and_32_bit.v
+    Info (12023): Found entity 1: and_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file and_tb.v
+    Info (12023): Found entity 1: and_tb
+Info (12021): Found 1 design units, including 1 entities, in source file or_32_bit.v
+    Info (12023): Found entity 1: or_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file or_tb.v
+    Info (12023): Found entity 1: or_tb
+Info (12021): Found 1 design units, including 1 entities, in source file extend_16_to_32.v
+    Info (12023): Found entity 1: extend_16_to_32
+Info (12021): Found 1 design units, including 1 entities, in source file extend_tb.v
+    Info (12023): Found entity 1: extend_tb
+Info (12021): Found 1 design units, including 1 entities, in source file register_block.v
+    Info (12023): Found entity 1: register_block
+Info (12021): Found 0 design units, including 0 entities, in source file comparator_1.v
+Info (12021): Found 1 design units, including 1 entities, in source file mux_32_bit_2_1.v
+    Info (12023): Found entity 1: mux_32_bit_2_1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_1_bit_2_1.v
+    Info (12023): Found entity 1: mux_1_bit_2_1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_32_tb.v
+    Info (12023): Found entity 1: mux_32_tb
+Info (12021): Found 1 design units, including 1 entities, in source file alu_32_bit.v
+    Info (12023): Found entity 1: alu_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file comparator_1_bit.v
+    Info (12023): Found entity 1: comparator_1_bit
+Info (12021): Found 1 design units, including 1 entities, in source file alu_32_tb.v
+    Info (12023): Found entity 1: alu_32_tb
+Info (12021): Found 1 design units, including 1 entities, in source file program_counter_block.v
+    Info (12023): Found entity 1: program_counter_block
+Info (12021): Found 1 design units, including 1 entities, in source file pc_tb.v
+    Info (12023): Found entity 1: pc_tb
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory_block.v
+    Info (12023): Found entity 1: data_memory_block
+Info (12021): Found 1 design units, including 1 entities, in source file sub_32_bit.v
+    Info (12023): Found entity 1: sub_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file alu_control_unit.v
+    Info (12023): Found entity 1: alu_control_unit
+Info (12021): Found 1 design units, including 1 entities, in source file mux_3_bit_2_1.v
+    Info (12023): Found entity 1: mux_3_bit_2_1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_cu_tb.v
+    Info (12023): Found entity 1: alu_cu_tb
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.v
+    Info (12023): Found entity 1: control_unit
+Info (12021): Found 1 design units, including 1 entities, in source file cu_tb.v
+    Info (12023): Found entity 1: cu_tb
+Info (12021): Found 1 design units, including 1 entities, in source file mips32.v
+    Info (12023): Found entity 1: mips32
+Info (12021): Found 1 design units, including 1 entities, in source file mux_5_bit_2_1.v
+    Info (12023): Found entity 1: mux_5_bit_2_1
+Info (12021): Found 1 design units, including 1 entities, in source file mips32_tb.v
+    Info (12023): Found entity 1: mips32_tb
+Info (12021): Found 1 design units, including 1 entities, in source file sub_tb.v
+    Info (12023): Found entity 1: sub_tb
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(7): created implicit net for "cout1"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(8): created implicit net for "cout2"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(9): created implicit net for "cout3"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(10): created implicit net for "cout4"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(11): created implicit net for "cout5"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(12): created implicit net for "cout6"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(13): created implicit net for "cout7"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(14): created implicit net for "cout8"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(15): created implicit net for "cout9"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(16): created implicit net for "cout10"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(17): created implicit net for "cout11"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(18): created implicit net for "cout12"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(19): created implicit net for "cout13"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(20): created implicit net for "cout14"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(21): created implicit net for "cout15"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(22): created implicit net for "cout16"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(23): created implicit net for "cout17"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(24): created implicit net for "cout18"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(25): created implicit net for "cout19"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(26): created implicit net for "cout20"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(27): created implicit net for "cout21"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(28): created implicit net for "cout22"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(29): created implicit net for "cout23"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(30): created implicit net for "cout24"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(31): created implicit net for "cout25"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(32): created implicit net for "cout26"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(33): created implicit net for "cout27"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(34): created implicit net for "cout28"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(35): created implicit net for "cout29"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(36): created implicit net for "cout30"
+Warning (10236): Verilog HDL Implicit Net warning at adder_32_bit.v(37): created implicit net for "cout31"
+Warning (10236): Verilog HDL Implicit Net warning at alu_32_tb.v(5): created implicit net for "zero_bit"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(43): created implicit net for "cout1"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(44): created implicit net for "cout2"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(45): created implicit net for "cout3"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(46): created implicit net for "cout4"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(47): created implicit net for "cout5"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(48): created implicit net for "cout6"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(49): created implicit net for "cout7"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(50): created implicit net for "cout8"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(51): created implicit net for "cout9"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(52): created implicit net for "cout10"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(53): created implicit net for "cout11"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(54): created implicit net for "cout12"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(55): created implicit net for "cout13"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(56): created implicit net for "cout14"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(57): created implicit net for "cout15"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(58): created implicit net for "cout16"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(59): created implicit net for "cout17"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(60): created implicit net for "cout18"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(61): created implicit net for "cout19"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(62): created implicit net for "cout20"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(63): created implicit net for "cout21"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(64): created implicit net for "cout22"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(65): created implicit net for "cout23"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(66): created implicit net for "cout24"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(67): created implicit net for "cout25"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(68): created implicit net for "cout26"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(69): created implicit net for "cout27"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(70): created implicit net for "cout28"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(71): created implicit net for "cout29"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(72): created implicit net for "cout30"
+Warning (10236): Verilog HDL Implicit Net warning at sub_32_bit.v(73): created implicit net for "cout31"
+Info (12127): Elaborating entity "mips32" for the top level hierarchy
+Info (12128): Elaborating entity "program_counter_block" for hierarchy "program_counter_block:pc"
+Warning (10858): Verilog HDL warning at program_counter_block.v(6): object all_instruction used but never assigned
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:cu"
+Info (12128): Elaborating entity "extend_16_to_32" for hierarchy "extend_16_to_32:ext"
+Info (12128): Elaborating entity "mux_5_bit_2_1" for hierarchy "mux_5_bit_2_1:mux_5"
+Info (12128): Elaborating entity "mux_1_bit_2_1" for hierarchy "mux_5_bit_2_1:mux_5|mux_1_bit_2_1:m1"
+Info (12128): Elaborating entity "register_block" for hierarchy "register_block:register"
+Warning (10175): Verilog HDL warning at register_block.v(18): ignoring unsupported system task
+Info (12128): Elaborating entity "mux_32_bit_2_1" for hierarchy "mux_32_bit_2_1:mux_32_1"
+Info (12128): Elaborating entity "alu_control_unit" for hierarchy "alu_control_unit:alu_cu"
+Info (12128): Elaborating entity "alu_32_bit" for hierarchy "alu_32_bit:alu_32"
+Info (12128): Elaborating entity "and_32_bit" for hierarchy "alu_32_bit:alu_32|and_32_bit:and1"
+Info (12128): Elaborating entity "or_32_bit" for hierarchy "alu_32_bit:alu_32|or_32_bit:or1"
+Info (12128): Elaborating entity "adder_32_bit" for hierarchy "alu_32_bit:alu_32|adder_32_bit:add1"
+Info (12128): Elaborating entity "full_adder" for hierarchy "alu_32_bit:alu_32|adder_32_bit:add1|full_adder:f1"
+Info (12128): Elaborating entity "xor_32_bit" for hierarchy "alu_32_bit:alu_32|xor_32_bit:xor1"
+Info (12128): Elaborating entity "sub_32_bit" for hierarchy "alu_32_bit:alu_32|sub_32_bit:sub1"
+Warning (10739): Verilog HDL warning at sub_32_bit.v(8): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(9): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(10): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(11): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(12): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(13): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(14): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(15): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(16): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(17): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(18): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(19): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(20): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(21): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(22): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(23): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(24): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(25): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(26): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(27): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(28): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(29): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(30): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(31): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(32): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(33): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(34): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(35): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(36): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(37): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(38): actual bit length 32 differs from formal bit length 1
+Warning (10739): Verilog HDL warning at sub_32_bit.v(39): actual bit length 32 differs from formal bit length 1
+Info (12128): Elaborating entity "data_memory_block" for hierarchy "data_memory_block:data"
+Warning (10175): Verilog HDL warning at data_memory_block.v(15): ignoring unsupported system task
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 101 warnings
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Wed Feb 03 12:00:22 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

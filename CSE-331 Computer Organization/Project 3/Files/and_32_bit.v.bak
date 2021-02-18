@@ -1,0 +1,4 @@
+module and_32_bit(i1,i2,out);
+
+
+endmodule

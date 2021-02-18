@@ -1,0 +1,2 @@
+module mux_32_bit_2_1(i1,i2,out,select_b);
+

@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Dersler/CSE\ 331\ -\ Computer\ Organization/HW4/HW4 {D:/Dersler/CSE 331 - Computer Organization/HW4/HW4/full_adder.v}
+
